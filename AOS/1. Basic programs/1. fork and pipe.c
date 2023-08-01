@@ -8,7 +8,7 @@ pid_t pid;
 char line[MAXLINE];
 if(pipe(fd)<0)
 printf("PIPE ERROR\n");
-if((pid==fork())<0)
+if((pid=fork())<0)
 printf("FORK EOORRR\n");
 
 if(pid==0)
